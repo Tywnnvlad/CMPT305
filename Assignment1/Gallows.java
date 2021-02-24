@@ -15,8 +15,104 @@ public class Gallows{
     }
     public String toString(){
         String gallowMsg = "";
+        if(errorCount == 1){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 2){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |             \n"+
+            " |             \n"+
+            " |              \n"+
+            " |              \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 3){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |          |   \n"+
+            " |             \n"+
+            " |              \n"+
+            " |              \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 4){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |          |   \n"+
+            " |         /    \n"+
+            " |              \n"+
+            " |              \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 5){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |          |   \n"+
+            " |         / \\    \n"+
+            " |              \n"+
+            " |              \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 6){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |          |   \n"+
+            " |         / \\    \n"+
+            " |          |    \n"+
+            " |              \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 7){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |          |   \n"+
+            " |         / \\    \n"+
+            " |          |    \n"+
+            " |         /    \n"+
+            "_|_              \n";
+        }
+        if(errorCount == 8){
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |          |    \n"+
+            " |          O   \n"+
+            " |          |   \n"+
+            " |         / \\    \n"+
+            " |          |    \n"+
+            " |         / \\    \n"+
+            "_|_              \n";
+        }
         if(errorCount == 0){
-            gallowMsg += "test string";
+            gallowMsg += "\n"+
+            "   _________     \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            " |              \n"+
+            "_|_              \n";
         }
         return gallowMsg;
     }
