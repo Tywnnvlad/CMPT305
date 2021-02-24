@@ -4,9 +4,7 @@ public class Gallows{
     private static final int MAXLIFE = 8;
     private  int life = MAXLIFE;
 
-    public void incrementHangman(){
-        int currentLife = life-errorCount;
-        System.out.println("ERROR, Lives Left: "+ currentLife);
+    public void incrementHangman(){        
         errorCount++;
     }
     public boolean isDead(){
