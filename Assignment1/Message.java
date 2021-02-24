@@ -30,6 +30,7 @@ public class Message{
             return true;}
     }
 
+
     public boolean solved(){
         if(guessCount == 0){
             return true;
@@ -51,6 +52,7 @@ public class Message{
         }
         return newString;
     }
+    /////////////////////
     public String getBlank(){
         for(int i = 0; i < wordLength; i++){
             blankString += "_";
@@ -62,12 +64,11 @@ public class Message{
         StringBuilder newBlank = new StringBuilder(blankString);
         for (int i = 0; i < letterGuessed.length(); i++) {
             for (int j = 0; j < wordLength; j++) {
-                if(letterGuessed.charAt(i) == word.charAt(j)){
-                    System.out.println("j="+j+" i="+i +" letter:"+ letterGuessed.charAt(i));
+                if(letterGuessed.charAt(i) == word.charAt(j)){                   
                     newBlank.setCharAt(j, letterGuessed.charAt(i));
                 }
             }       
-        }
+        }        
         blankString = newBlank.toString();
         return blankString;
     }
