@@ -5,12 +5,12 @@ public class Message{
     private String[] message = {"Lakers","Warriors","Nets","Celtic","Raptors","Jazz","Clippers","Heat","Knicks","Bulls","Hornets","Rockets","Nuggets","Mavericks","Suns","Pelicans","Bucks","Wizards","Blazers","Spurs","Cavaliers","Timberwolves","Kings","Pistons"};
 
     Random rand = new Random();
-    public String word = message[rand.nextInt(message.length)].toUpperCase();
-    public int wordLength = word.length();
-    public int guessCount = wordLength;
-    public String letterGuessed = "";
-    public String blankString = "";
-    public String guessedString = "";
+    private String word = message[rand.nextInt(message.length)].toUpperCase();
+    private int wordLength = word.length();
+    private int guessCount = wordLength;
+    private String letterGuessed = "";
+    private String blankString = "";
+    private String guessedString = "";
 
 
 
@@ -20,7 +20,6 @@ public class Message{
         c = Character.toUpperCase(c);
         for (int i = 0; i < wordLength; i++) {
             if (c == word.charAt(i)){
-                System.out.println(word.charAt(i));
                 guessCount--;
             }
         }
@@ -54,18 +53,7 @@ public class Message{
         String outputString = String.valueOf(output);        
         return outputString;
     }
-/////////////////////////
-    public String getWord(){
-        return word;
-    }
-    public String getChar(){
-        String newString = "";
-        for(int i = 0; i < wordLength; i++){
-            newString += word.charAt(i);
-        }
-        return newString;
-    }
-    /////////////////////
+
     public String getBlank(){
         for(int i = 0; i < wordLength; i++){
             blankString += "_";

@@ -4,8 +4,8 @@ import java.lang.Object.*;
 
 
 public class Hangman {
-    public Message message;
-    public Gallows gallows;
+    private Message message;
+    private Gallows gallows;
     public static void main(String[] args) {
         gameInitialize();
     }
@@ -31,7 +31,6 @@ public class Hangman {
                 }
             }else gallows.incrementHangman();    
 
-            //System.out.println(message.toString()+"\n");
         } JOptionPane.showMessageDialog(null,message.toString()+gallows.toString()+"YOU ARE DEAD!", "GAMEOVER!", JOptionPane.INFORMATION_MESSAGE);
         gameReset();
     }
