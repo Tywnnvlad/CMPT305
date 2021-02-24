@@ -1,12 +1,12 @@
-public class Gallows {
+public class Gallows{
 
     private int errorCount;
-    private final int life = 8;
+    private static final int life = 8;
 
     private void incrementHangman(){
         errorCount++;
     }
-    public boolean isDead() {
+    public boolean isDead(){
         if (errorCount == life) return true;
         else return false;
     }
