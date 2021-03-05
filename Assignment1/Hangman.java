@@ -2,18 +2,35 @@ import javax.swing.*;
 import java.util.*; 
 import java.lang.Object.*;
 
+/**
+ * Gregory Edward Cal
+ * 180232
+ * 
+ * The Hangman class will produce the classic Hangman game where the user has to guess the word. They only have 8 lives/errors to guess the word.
+ * 
+ *Requires a Message class
+ *Requires a Gallows class 
+ */
 
 public class Hangman {
     private Message message;
     private Gallows gallows;
+
+    /**
+     * Run the gameInitialize() sequence and run the game
+     * @param args
+     */
     public static void main(String[] args) {
         gameInitialize();
     }
+
+    /**
+     * This will initialize the game.
+     */
     public static void gameInitialize(){
 
         Message message = new Message();
         Gallows gallows = new Gallows();
-        Scanner sc = new Scanner(System.in);
         message.getBlank();       
 
         while (gallows.isDead()){
@@ -34,6 +51,10 @@ public class Hangman {
         } JOptionPane.showMessageDialog(null,message.toString()+gallows.toString()+"YOU ARE DEAD!", "GAMEOVER!", JOptionPane.INFORMATION_MESSAGE);
         gameReset();
     }
+
+    /**
+     * This method will be used to ask if the user would like to keep playing after they lost or won
+     */
     public static  void gameReset(){
         String answer ="";
         while(answer != null){
@@ -42,6 +63,6 @@ public class Hangman {
             if(key == 'Y'){
                 gameInitialize();
             }else System.exit(1);
-        }
+        }System.exit(1);
     }
 }
