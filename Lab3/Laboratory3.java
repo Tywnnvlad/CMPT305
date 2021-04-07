@@ -1,3 +1,10 @@
+/**
+ * Gregory Edward Cal
+ * 180232
+ * 
+ * A program that will check if a word from the user is a palindrome.
+ */
+
 import javax.swing.*;
 public class Laboratory3{
 
